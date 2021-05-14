@@ -13,7 +13,7 @@ docker run --name sonarqube --rm \
 ```
 2. Once the application is up, save the IP of your new container to the `SONARQUBE_URL`.
 ```
-SONARBUBE_URL=$(docker inspect -f '{{ .NetworkSettings.Networks.bridge.IPAddress }}' sonarqube)
+SONARQUBE_URL=$(docker inspect -f '{{ .NetworkSettings.Networks.bridge.IPAddress }}' sonarqube)
 ```
 3. Log in to SonarQube at `http://localhost:9000`
     * Username: admin
